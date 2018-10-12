@@ -23,6 +23,7 @@ let app = new Express()
 
 app.use((req, res, next) => {
   console.log('in the first middleware')
+  
   req.body = {
     name: 'mehdi', 
     age: 24
