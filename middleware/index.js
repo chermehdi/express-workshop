@@ -27,6 +27,8 @@ app.use((req, res, next) => {
     name: 'mehdi', 
     age: 24
   }
+  // if you do not call next it should throw an
+  // error and abort the execution of your callback
   next() // calling next is very important
 })
 
